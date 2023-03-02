@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url('images/biznisPhoto.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10%;
+}
+
+.title-options {
+    display: flex;
+    gap: 100px;
+}
+
+.brandTitle {
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+}
+
+.brandTitle a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbarLinks ul {
+    display: flex;
+}
+
+.navbarLinks ul li {
+    list-style: none;
+}
+
+.navbarLinks ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 30px;
+    font-weight: bolder;
+    transition: color 0.25s ease-out;
+}
+
+.navbarLinks ul li a:hover {
+    color: black;
+}
+
+.underlineEffect {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 1px;
+}
+
+.underlineEffect::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.25s ease-out;
+}
+
+.underlineEffect:hover::before {
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.userOptions {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.userOptions a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 20px;
+    font-weight: bolder;
+    transition: color 0.25s ease-out;
+}
+
+.userOptions a:hover {
+    color: black;
+}
+
+.userOptions button {
+    padding: 20px;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    background-color: #8b5a2b;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px black;
+    color: white;
+    transition: color .25s ease-out;
+}
+
+.userOptions button span {
+    height: fit-content;
+    width: fit-content;
+}
+
+.userOptions button:hover {
+    color: black;
+}
+
+.sectionInfo {
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-left: 150px;
+    padding: 80px;
+}
+
+.sectionInfo h1 {
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+
+.sectionInfo p {
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+}
+
+.sectionInfo .buttons {
+    display: flex;
+    width: 100%;
+    gap: 200px;
+}
+
+.sectionInfo .buttons #quote {
+    background-color: #8b5a2b;
+    border-radius: 30px;
+    padding: 25px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    color: white;
+    border: none;
+    box-shadow: 0 0 0 1px black;
+    width: 200px;
+    cursor: pointer;
+}
+
+.sectionInfo .buttons #more {
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 25px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    color: #8b5a2b;
+    border: none;
+    box-shadow: 0 0 0 1px black;
+    width: 200px;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+
+.sectionInfo .buttons #more:hover {
+    background-color: #8b5a2b;
+    color: white;
+}
