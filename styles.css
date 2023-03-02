@@ -7,7 +7,6 @@
 }
 
 body {
-    height: 100vh;
     background-image: url('images/biznisPhoto.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,7 +16,8 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 10%;
+    height: 100px;
+    padding: 20px;
 }
 
 .title-options {
@@ -42,6 +42,8 @@ body {
 
 .navbarLinks ul li {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .navbarLinks ul li a {
@@ -114,7 +116,14 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 0 1px black;
     color: white;
-    transition: color .25s ease-out;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+
+.userOptions button:hover {
+    font-size: larger;
+    padding: 25px;
+    animation: colorChange 2s infinite;
 }
 
 .userOptions button span {
@@ -122,8 +131,22 @@ body {
     width: fit-content;
 }
 
-.userOptions button:hover {
-    color: black;
+@keyframes colorChange {
+    0%{
+        color: white;
+    }
+    25%{
+        color: black;
+    }
+    50%{
+        color: white;
+    }
+    75%{
+        color: black;
+    }
+    100%{
+        color: white;
+    }
 }
 
 .sectionInfo {
